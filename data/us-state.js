@@ -1,0 +1,163 @@
+export default [{
+    "name": "New Delhi",
+    "alpha-2": "NCR",
+
+}, {
+    "name": "Shimla",
+    "alpha-2": "Sh",
+
+}, {
+    "name": "Agra",
+    "alpha-2": "Ag",
+
+}, {
+    "name": "Manali",
+    "alpha-2": "Ma",
+
+}, {
+    "name": "Kullu",
+    "alpha-2": "Ku",
+
+}, {
+    "name": "Mussoorie",
+    "alpha-2": "Mu"
+}, {
+    "name": "Dehradun",
+    "alpha-2": "Dt"
+}, {
+    "name": "Dharamsala ",
+    "alpha-2": "Ds"
+}, {
+    "name": "Amritsar",
+    "alpha-2": "Amt"
+}, {
+    "name": "Chandigarh",
+    "alpha-2": "Cht"
+}, {
+    "name": "Dalhousie",
+    "alpha-2": "Dal"
+}, {
+    "name": "Nainital",
+    "alpha-2": "Nt"
+}, {
+    "name": "Lucknow",
+    "alpha-2": "Lck"
+}, {
+    "name": "Jaipur",
+    "alpha-2": "Jp"
+}, {
+    "name": "Dharamshala ",
+    "alpha-2": "Dha"
+}, {
+    "name": "Dalhousie",
+    "alpha-2": "Dal"
+}, {
+    "name": "Ladakh",
+    "alpha-2": "Lad"
+}, {
+    "name": "Kaza",
+    "alpha-2": "Kaza"
+}, {
+    "name": "Udaipur",
+    "alpha-2": "Uda"
+}, {
+    "name": "Chakrata",
+    "alpha-2": "Cha"
+}, {
+    "name": "Attock",
+    "alpha-2": "Att"
+}, {
+    "name": "Awaran",
+    "alpha-2": "Awa"
+}, {
+    "name": "Barkhan",
+    "alpha-2": "Bar"
+}, {
+    "name": "Minnesota",
+    "alpha-2": "MN"
+}, {
+    "name": "Faisalabad",
+    "alpha-2": "Fais"
+}, {
+    "name": "Bahawalnagar",
+    "alpha-2": "Bahawalnagar"
+}, {
+    "name": "Bahawalpur",
+    "alpha-2": "Bahawalpur"
+}, {
+    "name": "Besham",
+    "alpha-2": "Besham"
+}, {
+    "name": "Bolan",
+    "alpha-2": "Bolan"
+}, {
+    "Chagai": "Dinga",
+    "Chagai-2": "Dinga"
+}, {
+    "name": "Gujrat",
+    "alpha-2": "Gujrat"
+}, {
+    "name": "Hafizabad",
+    "alpha-2": "Hafizabad"
+}, {
+    "name": "Hyderabad",
+    "alpha-2": "Hyderabad"
+}, {
+    "name": "Islamabad",
+    "alpha-2": "Islamabad"
+}, {
+    "name": "Karachi",
+    "alpha-2": "Karachi"
+}, {
+    "name": "Kohlu",
+    "alpha-2": "Kohlu"
+}, {
+    "name": "Lahore",
+    "alpha-2": "Lahore"
+}, {
+    "name": "Sargodha",
+    "alpha-2": "Sargodha"
+}, {
+    "name": "Ziarat",
+    "alpha-2": "Ziarat"
+}, {
+    "name": "Kathmandu",
+    "alpha-2": "Kathmandu"
+}, {
+    "name": "Bharatpur",
+    "alpha-2": "Bharatpur"
+}, {
+    "name": "Lalitpur",
+    "alpha-2": "Lalitpur"
+}, {
+    "name": "Lhasa",
+    "alpha-2": "Lhasa"
+}, {
+    "name": "New Delhi",
+    "alpha-2": "Delhi"
+}, {
+    "name": "Mumbai",
+    "alpha-2": "Mumbai"
+}, {
+    "name": "Chennai",
+    "alpha-2": "Chennai"
+}, {
+    "name": "Banglore",
+    "alpha-2": "Banglore"
+}, {
+    "name": "Thiruvananthapuram",
+    "alpha-2": "Thiruvananthapuram"
+}, {
+    "name": "Kolkata",
+    "alpha-2": "Kolkata"
+}, {
+    "name": "Puducherry",
+    "alpha-2": "Puducherry"
+}, {
+    "name": "Lakshadweep",
+    "alpha-2": "Lakshadweep"
+}
+, {
+    "name": "Puducherry	",
+    "alpha-2": "Puducherry	"
+}];
