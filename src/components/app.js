@@ -26,6 +26,9 @@ export default class App extends Component {
                      <LinkContainer to="/dataset">
                          <NavItem>Dataset</NavItem>
                     </LinkContainer>
+                     <LinkContainer to="/Predict">
+                         <NavItem>Predict</NavItem>
+                    </LinkContainer>
                 </Nav>
         </Navbar>
           {this.props.children}

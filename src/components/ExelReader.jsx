@@ -1,12 +1,11 @@
 import React from 'react'
-import { Table } from 'react-bootstrap';
+import { Table,Image  } from 'react-bootstrap';
 import { data } from '../../data/Head'
 import { Desc } from '../../data/Desc'
 function ExelReader() {
-    console.log(Desc);
     return (
         <div>
-            <h1>Head</h1>
+            <h3>Head</h3>
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -88,7 +87,7 @@ function ExelReader() {
 
                 </tbody>
             </Table>
-            <h1>Desc</h1>
+            <h3>Desc</h3>
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -170,7 +169,26 @@ function ExelReader() {
 
                 </tbody>
             </Table>
-
+            <h1>Let's have a more graphical representation of the data</h1>
+            <Image        src="data\Assests\transactiondataset.png"        rounded     />
+            <br/>
+            <Table striped bordered hover>
+                <thead>
+                    <tr>
+                        <th>Outlier_fraction</th>
+                        <th>Fraud Cases</th>
+                        <th>Valid Cases</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>0.0016529506928325245</th>
+                        <th>47</th>
+                        <th>28434</th>
+                    </tr>
+                </tbody>
+            </Table>
+            <h3>How different are the amount of money used in different transaction classes</h3>
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -215,7 +233,156 @@ function ExelReader() {
                 </tbody>
             </Table>
 
+            <Image        src="data\Assests\amountpertransaction.png"        fluid     />
+            <br/>
+            <h1>Graphical representation of the data</h1>
+            <Image        src="data\Assests\timeoftransaction.png"        rounded     />
+            <br/>
+            <h4>The above correlation matrix shows that none of the V1 to V28 PCA components have any correlation to each other however if we observe Class has some form positive and negative correlations with the V components but has no correlation with Time and Amount.</h4>
+            <Image        src="data\Assests\correctionMatrix.png"        rounded     />
 
+            <h3>Random forest model details</h3>
+ 
+
+            <Table striped bordered hover>
+                <thead>
+                    <tr>
+                        <th>Isolation Forest</th>
+                        <th>69</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                        <th>Accuracy Score</th>
+                        <th>0.9975773322565921</th>
+                </tr>
+                <tr>
+                        <td colSpan={2}>Classification Report :</td>
+                    </tr>
+                    <tr>
+                        <th> </th>
+                        <th>precision    </th>
+                        <th>recall      </th>
+                        <th>f1-score     </th>
+                        <th>support    </th>
+                </tr>
+                    <tr>
+                        <th>0 </th>
+                        <th>1.00    </th>
+                        <th>1.00       </th>
+                        <th> 1.00     </th>
+                        <th>28434    </th>
+                </tr>
+                    <tr>
+                        <th>1 </th>
+                        <th>0.27     </th>
+                        <th>0.28      </th>
+                        <th>0.27      </th>
+                        <th>47    </th>
+                </tr>
+                    <tr>
+                        <th> </th>
+                        <th>precision    </th>
+                        <th>recall      </th>
+                        <th>f1-score     </th>
+                        <th>support    </th>
+                </tr>
+                    <tr>
+                    <th>micro avg </th>
+                        <th>1.00 </th>
+                        <th>1.00    </th>
+                        <th>1.00      </th>
+                        <th>28481    </th>
+                </tr>
+                    <tr>
+                        <th> macro avg  </th>
+                        <th>0.63          </th>
+                        <th>0.64            </th>
+                        <th>0.64           </th>
+                        <th>28481    </th>
+                </tr>
+                    <tr>
+                        <th>weighted avg  </th>
+                        <th>1.00          </th>
+                        <th>1.00            </th>
+                        <th>1.00           </th>
+                        <th>28481    </th>
+                </tr>
+                </tbody>
+            </Table>
+            <Table striped bordered hover>
+                <thead>
+                    <tr>
+                        <th>Local Outlier Factor</th>
+                        <th>93</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                        <th>Accuracy Score</th>
+                        <th>0.9975773322565921</th>
+                </tr>
+                <tr>
+                        <td colSpan={2}>Classification Report :</td>
+                    </tr>
+                    <tr>
+                        <th> </th>
+                        <th>precision    </th>
+                        <th>recall      </th>
+                        <th>f1-score     </th>
+                        <th>support    </th>
+                </tr>
+                    <tr>
+                        <th>0 </th>
+                        <th>1.00    </th>
+                        <th>1.00       </th>
+                        <th> 1.00     </th>
+                        <th>28434    </th>
+                </tr>
+                    <tr>
+                        <th>1 </th>
+                        <th>0.27     </th>
+                        <th>0.28      </th>
+                        <th>0.27      </th>
+                        <th>47    </th>
+                </tr>
+                    <tr>
+                        <th> </th>
+                        <th>precision    </th>
+                        <th>recall      </th>
+                        <th>f1-score     </th>
+                        <th>support    </th>
+                </tr>
+                    <tr>
+                    <th>micro avg </th>
+                        <th>1.00 </th>
+                        <th>1.00    </th>
+                        <th>1.00      </th>
+                        <th>28481    </th>
+                </tr>
+                    <tr>
+                        <th> macro avg  </th>
+                        <th>0.51          </th>
+                        <th>0.51            </th>
+                        <th>0.51           </th>
+                        <th>28481    </th>
+                </tr>
+                    <tr>
+                        <th>weighted avg  </th>
+                        <th>1.00          </th>
+                        <th>1.00            </th>
+                        <th>1.00           </th>
+                        <th>28481    </th>
+                </tr>
+                </tbody>
+            </Table>
+            
         </div>
     )
 }
