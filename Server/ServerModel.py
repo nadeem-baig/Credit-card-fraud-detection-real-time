@@ -58,8 +58,15 @@ def process_json():
 
         return str(preds1[0])
     else:
-        return 500
+        return "500"
         
+@app.route('/', methods=['GET'])
+@cross_origin()
+
+def ServerStatus():
+        return "200"
+
+
 @app.route('/AdaBoost', methods=['POST'])
 @cross_origin()
 
@@ -73,7 +80,7 @@ def process_ada():
         preds1 = model.predict(data_df1)
         return str(preds1[0])
     else:
-        return 500
+        return "500"
 
 @app.route('/RandomForest', methods=['POST'])
 @cross_origin()
@@ -88,7 +95,7 @@ def process_RandomForest():
         preds1 = model.predict(data_df1)
         return str(preds1[0])
     else:
-        return 500
+        return "500"
 
 @app.route('/CatBoostClassifier', methods=['POST'])
 @cross_origin()
@@ -103,7 +110,7 @@ def process_CatBoostClassifier():
         preds1 = model.predict(data_df1)
         return str(preds1[0])
     else:
-        return 500
+        return "500"
 
 @app.route('/LightGBM', methods=['POST'])
 @cross_origin()
@@ -118,7 +125,7 @@ def process_LightGBM():
         preds1 = model.predict(data_df1)
         return str(preds1[0])
     else:
-        return 500
+        return "500"
 
 
 @app.route('/AllModels', methods=['POST'])
@@ -185,7 +192,7 @@ def process_AllModels():
         # t5.join()
         return str(ResultDish)
     else:
-        return 500
+        return "500"
 
 
 @app.route('/test', methods=['POST'])
@@ -197,7 +204,7 @@ def process_test():
         content = request.get_json()
         return str(content[0].pop("Class"))
     else:
-        return 500
+        return "500"
 
 if __name__ == '__main__':
     app.run()

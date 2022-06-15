@@ -183,7 +183,7 @@ export default class SimpleMap extends Component {
   //   );
   // }
   render() {
-    //   console.log(this.getMarkerList());
+      console.log(this.getMarkerList());
      let fraudData = [];
      let nonFraudData = [];
      if (this.props.transactions && this.props.transactions.length > 0) {

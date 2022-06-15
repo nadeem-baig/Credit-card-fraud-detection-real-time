@@ -20,7 +20,9 @@ class TransactionList extends Component {
       totalPage: 0,
       loading: true
     };
-
+    componentDidMount(){
+      document.title = "Fraud transactions by city"
+    }
 
     componentWillMount() {
         this.fetchData(1, 10, this.state.region);
@@ -56,7 +58,7 @@ class TransactionList extends Component {
     //   pages={this.state.pages} // Display the total number of pages
     //   loading={this.state.loading} // Display the loading overlay when we need it
     //   onChange={this.fetchData} // Request new data when things change
-    // console.log(this.props.data);
+    console.log(this.props.data);
     let addressFields = ["county", "city", "name"];
 
     const columns = [

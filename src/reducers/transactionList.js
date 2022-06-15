@@ -100,7 +100,7 @@ export default function (state = INITIAL_STATE, action) {
         let returnData = action.data.Transactions? mapData(action.data.Transactions): [];
         let numFraud = action.data.Fraud?action.data.Fraud: 0;
         let nonFraud = action.data.NonFraud?action.data.NonFraud: 0;
-        // console.log("returnData", returnData);
+        console.log("returnData", returnData);
         // return { ...state, transactions: action.payload.data };
         return { ...state, transactions: returnData, isLoading: false, numFraud: numFraud, nonFraud: nonFraud };
         break;

@@ -24,7 +24,9 @@ class Landing extends Component {
             }
         }, 1000);
     }
-
+    componentDidMount(){
+        document.title = "Live fraud transactions"
+    }
     componentWillUnmount() {
         if (this.callMapDataInteval) {
             clearInterval(this.callMapDataInteval);
@@ -70,7 +72,7 @@ class Landing extends Component {
   }
 }
 function mapStateToProps(state) {
-    // console.log(state.transactionList.isLoading);
+    console.log(state.transactionList.isLoading);
     return {
         transactions: state.transactionList.transactions,
         message: state.message,
